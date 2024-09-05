@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+/* General styling for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6e072d; /* Background color */
+    width: 100%; /* Spanning the entire width */
+    color: white; /* Font color */
+}
+
+/* Styling for the unordered lists */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Individual list items */
+nav ul li {
+    padding: 18px 27px; /* 18px (font size) * 1.5 = 27px horizontal padding */
+    font-size: 18px; /* Font size */
+    cursor: pointer;
+    border-left: 2px solid white; /* Left border between items */
+}
+
+/* Remove border from specific items */
+
+nav ul.right-menu li:first-child {
+    border-left: none; /* No right border for the last item in the right menu */
+}
+
+/* Hover effects */
+nav ul li:hover {
+    background-color: #b90e4d; /* Hover background color */
+}
+
+/* Align the left and right menus properly */
+.left-menu {
+    justify-content: flex-start;
+}
+
+.right-menu {
+    justify-content: flex-end;
+}
